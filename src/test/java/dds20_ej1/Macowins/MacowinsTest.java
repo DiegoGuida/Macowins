@@ -1,5 +1,7 @@
 package dds20_ej1.Macowins;
 
+import static org.junit.Assert.assertSame;
+
 import java.time.LocalDate;
 
 import org.junit.Before;
@@ -49,5 +51,9 @@ public class MacowinsTest {
 	@Test
 	public void precioDeVentaDePrenda() {
 		Assert.assertEquals(100, macowins.precioDeVentaPorPrenda(prenda1), 1);
+	}
+	@Test
+	public void tipoDePrenda() {
+		assertSame(Tipo.SACOS, prenda1.getTipo());
 	}
 }

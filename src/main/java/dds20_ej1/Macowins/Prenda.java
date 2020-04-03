@@ -19,7 +19,7 @@ public class Prenda {
 		super();
 		this.nombre = nombre;
 		this.precioBase = precioBase;
-		this.tipo = tipo;
+		this.setTipo(tipo);
 		this.estado = estado;
 
 	}
@@ -45,6 +45,14 @@ public class Prenda {
 			return -1;
 
 		}
+	}
+
+	public Tipo getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(Tipo tipo) {
+		this.tipo = tipo;
 	}
 
 }
